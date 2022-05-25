@@ -15,9 +15,9 @@ public class Controlador2 {
     Interface createPersonService;
     @GetMapping("/getpersona")
     Interface getControlador2(){
-        System.out.println("Controlador 2");
 
-        createPersonService.setAge(createPersonService.getAge()*2);
+
+        createPersonService.getEdad(createPersonService.getEdad()*2);
         return createPersonService;
     }
 }
