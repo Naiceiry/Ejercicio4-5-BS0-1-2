@@ -11,10 +11,10 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 public class Controlador1 {
     @Autowired
-    servicio persona;
+    Interface persona;
 
     @GetMapping("/addPersona")
-    public servicio getPersona(@RequestHeader("nombre") String nombre, @RequestHeader("poblacion") String poblacion, @RequestHeader("edad") int edad){
+    public Interface getPersona(@RequestHeader("nombre") String nombre, @RequestHeader("poblacion") String poblacion, @RequestHeader("edad") int edad){
         persona.setNombre(nombre);
         persona.setPoblacion(poblacion);
         persona.setEdad(edad);

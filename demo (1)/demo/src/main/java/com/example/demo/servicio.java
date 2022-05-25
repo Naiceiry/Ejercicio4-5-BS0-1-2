@@ -1,7 +1,5 @@
 package com.example.demo;
-import org.springframework.stereotype.Service;
 
-@Service
 public class servicio {
     int edad;
     String nombre;
@@ -11,7 +9,7 @@ public class servicio {
     }
 
     public void setEdad(int edad) {
-        this.edad = this.edad;
+        this.edad = edad;
     }
 
     public String getNombre() {

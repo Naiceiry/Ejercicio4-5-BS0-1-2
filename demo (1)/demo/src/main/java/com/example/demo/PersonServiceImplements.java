@@ -1,12 +1,8 @@
-import com.example.demo.Interface;
-import com.example.demo.servicio;
-import org.springframework.beans.factory.annotation.Autowired;
+package com.example.demo;
 import org.springframework.stereotype.Service;
 
 @Service
 public class PersonServiceImplements implements Interface {
-    @Autowired
-    servicio persona;
 
     servicio person = new servicio();
 
@@ -29,8 +25,7 @@ public class PersonServiceImplements implements Interface {
     public int getEdad() {
         return person.getEdad();
     }
-
-    public int setEdad(int edad) {
+    public void setEdad(int edad) {
         person.setEdad(edad);
     }
 }
